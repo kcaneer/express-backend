@@ -22,7 +22,6 @@ app.get("/", function (req, res) {
     // query to the database and get the records
     request.query("select * from details", function (err, recordset) {
       if (err) console.log(err);
-
       // send records as a response
       res.send(recordset);
     });
